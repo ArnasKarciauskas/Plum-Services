@@ -6,7 +6,14 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>$(document).ready(function () {
+    $('div.card').fadeIn(1000).removeClass('card');
+});</script>
 <style type="text/css">
 
 
@@ -24,15 +31,17 @@ body{
  margin-left: auto;
  margin-right: auto;
  width: 50%;
+
 }
 
 .card{
      width: 65%;
      display:inline-block;
+     display: none;
      box-shadow: 2px 2px 20px black;
      border-radius: 5px;
      margin: 2%;
-     margin-top: 20%;
+
 
 
     }
@@ -116,7 +125,7 @@ button:hover{
 <div class="main">
 
  <!--cards -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <!--<div class="col-md-4">-->
     <div class="col-sm-4">
@@ -179,7 +188,7 @@ Need a document transcribed? Video translated?</p>
 </div>
 </div>
 <!--cards -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <!--<div class="col-md-4">-->
     <div class="col-sm-4">

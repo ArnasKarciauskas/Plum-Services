@@ -15,6 +15,9 @@ p{
   font-family:Roboto;
 }
 
+.navbar-header{
+  display: none;
+}
 .navbar-default{
   background:#fff;
   border:0;
