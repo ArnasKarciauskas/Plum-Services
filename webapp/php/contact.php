@@ -2,9 +2,7 @@
 if (isset($_POST['submit'])) {
 	  $name = $_POST['name'];
       $email = $_POST['email'];
-	  $phone = $_POST['phone'];
-      $textarea = $_POST['textarea'];
-	  $promotional = $_POST['promotional'];     
+      $textarea = $_POST['message'];    
       
 	  echo "Your message was sent succesfully, thank you";  
 
