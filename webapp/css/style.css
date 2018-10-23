@@ -29,10 +29,8 @@ p{
   color:#000 !important;
   font-weight:bold;
 }
-.floatright{
   float: right;
-  float:inherit;
-}
+
 #showcase h1{
   font-size:50px;
   margin-bottom:20px;
@@ -41,7 +39,6 @@ p{
 #showcase img{
   width:90%;
   margin-left:0px;
-
 }
 
 #showcase .showcase-right{
