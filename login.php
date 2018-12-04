@@ -3,7 +3,7 @@
 //start the session
 session_start();
 // if the user is already logged in this will redirect them to the Services page
-if(isset($_SESSION["loggedin"])&& $_SESSION["loggedin"]) === true){
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
     header("location: services.php");
     exit;
 }
