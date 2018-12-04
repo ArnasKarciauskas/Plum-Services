@@ -19,7 +19,8 @@
 		});</script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <style>
-    .jumbotron {background-size: 100% 100%; }
+        .jumbotron { background-size: auto 100%; }
+
 
 
     </style>
