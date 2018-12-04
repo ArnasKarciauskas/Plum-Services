@@ -18,6 +18,11 @@
 		    $('div.navbar').fadeIn(3000).removeClass('navbar');
 		});</script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <style>
+    .jumbotron {background-size: 100% 100%; }
+
+
+    </style>
 </head>
 
 <body>
@@ -69,7 +74,7 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
 					<div class="info-left">
-						<img src="https://en.agictech.com/media/1455/services4.png">
+						<img src="">
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6">
