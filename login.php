@@ -30,11 +30,46 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
     //validation of login stuff
     if(empty($username_err)&& empty($password_err)){
         $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        if($stmt = mysqli_prepare($link, $sql)){
+            mysqli_stmt_bind_param($stmt,"s", $param_username);
+            $param_username = $username;
+            // next we'll attempt to execute the statement
+            if(mysqli_stmt_execute($stmt)){
+                mysqli_stmt_store_result($stmt);
+                if(mysqli_stmt_num_rows($stmt) == 1){
+                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    if(mysqli_stmt_fetch($stmt)){
+                        if(password_verify($password, $hashed_password)){
+                            session_start();
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            $_SESSION["username"] = $username;
+                            // now this will redirect to the services page
+                            header("location: services.php");  
+                        } else{
+                            //error
+                            $password_err = "Password Incorrect";
+                        }
+                    }
+                    } else{
+                        $username_err = "Username Incorrect";
         
-        
+                    }
+                } else{
+                    echo "Something seems to have gone wrong";
+                }
+                 
+            
+        }
+          mysqli_stmt_close($stmt);
+    
+ 
     }
-}
+        mysqli_close($link);
 
+}
+    
+?>
 
 
 
@@ -114,11 +149,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 			                    <form role="form" action="" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>
-			                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+			                        	<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                                    <span class="help-block"><?php echo $username_err; ?></span>
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+			                        	<input type="password" name="password" class="form-control">
+                                        <span class="help-block"><?php echo $password_err; ?></span>
 			                        </div>
 			                        <button type="submit" class="btn">Sign in!</button>
 			                    </form>
