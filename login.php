@@ -10,25 +10,25 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
 require_once "configuration.php";
 
 $username = $password = "";
-$username_err = $password_err = "";
+$username_error = $password_error = "";
 // processing the data 
 if ($_SERVER ["REQUEST_METHOD"] == "POST"){
     if(empty(trim($_POST["username"]))){
-        $username_err="Enter a username";
+        $username_error="Enter a username";
         
     }
     else{
         $username = trim($_POST["username"]);
     }
     if(empty(trim($_POST["password"]))){
-        $password_err = "Enter your password";
+        $password_error = "Enter your password";
         
     }
     else {
         $password = trim($_POST["password"]);
     }
     //validation of login stuff
-    if(empty($username_err) && empty($password_err)){
+    if(empty($username_error) && empty($password_error)){
         $sql = "SELECT id, username, password FROM users WHERE username = ?";
         if($stmt = mysqli_prepare($link, $sql)){
             mysqli_stmt_bind_param($stmt, "s", $param_username);
@@ -37,11 +37,14 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
             
             if(mysqli_stmt_execute($stmt)){
                 mysqli_stmt_store_result($stmt);
+                
                 if(mysqli_stmt_num_rows($stmt) == 1){
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
                             session_start();
+                            
+                            
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
@@ -49,13 +52,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                         
                     
                 } else {
-                            $password_err = "Incorrect";
+                            $password_error = "Incorrect";
                         }
                     }
                 
                 
                 }else{
-                        $username_err = "Username Incorrect";
+                        $username_error = "Username Incorrect";
         
                     }
                 } else{
@@ -150,15 +153,15 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                             </div>
                             <div class="form-bottom">
 			                    <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login-form">
-			                    	<div class="form-group<?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+			                    	<div class="form-group<?php echo (!empty($username_error)) ? 'has-error' : ''; ?>">
 			                    		<label class="sr-only" for="form-username">Username</label>
 			                        	<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                                    <span class="help-block"><?php echo $username_err; ?></span>
+                                    <span class="help-block"><?php echo $username_error; ?></span>
 			                        </div>
-			                        <div class="form-group<?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+			                        <div class="form-group<?php echo (!empty($password_error)) ? 'has-error' : ''; ?>">
 			                        	<label class="sr-only" for="form-password">Password</label>
 			                        	<input type="password" name="password" class="form-control">
-                                        <span class="help-block"><?php echo $password_err; ?></span>
+                                        <span class="help-block"><?php echo $password_error; ?></span>
 			                        </div>
 			                        <button type="submit" class="btn">Sign in!</button>
 			                    </form>
