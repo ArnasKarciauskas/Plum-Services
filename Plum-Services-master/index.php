@@ -34,12 +34,12 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="categories.html">Services</a></li>
+					<li><a href="categories.php">Services</a></li>
 					<li><a href="#info1">About</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li><a href="#showcase">Home</a></li>
-					<li><a href="login.html">Login</a></li>
-					<li><a href="signup.html">Sign-Up</a></li>
+					<li><a href="login.php">Login</a></li>
+					<li><a href="signup.php">Sign-Up</a></li>
 				</ul>
 
 			</div>

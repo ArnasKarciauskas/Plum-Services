@@ -31,9 +31,9 @@
 					<li><a href="service.html">services</a></li>
 					<li><a href="#info1">About</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="login.html">login</a></li>
-					<li><a href="#showcase">signup</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="login.php">login</a></li>
+					<li><a href="signup.php">signup</a></li>
 				</ul>
 
 			</div>

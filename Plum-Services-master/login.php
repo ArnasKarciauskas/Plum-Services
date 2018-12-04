@@ -1,3 +1,46 @@
+<?php
+
+//start the session
+session_start();
+// if the user is already logged in this will redirect them to the Services page
+if(isset($_SESSION["loggedin"])&& $_SESSION["loggedin"]) === true){
+    header("location: services.php");
+    exit;
+}
+require_once "configuration.php";
+
+$username = $password = "";
+$username_err = $password_err = "";
+// processing the data 
+if ($_SERVER ["REQUEST_METHOD"] == "POST"){
+    if(empty(trim($_POST["username"]))){
+        $username_err="Enter a username";
+        
+    }
+    else{
+        $username = trim($_POST["username"]);
+    }
+    if(empty(trim($_POST["password"]))){
+        $password_err = "Enter your password";
+        
+    }
+    else {
+        $password = trim($_post["password"]);
+    }
+    //validation of login stuff
+    if(empty($username_err)&& empty($password_err)){
+        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        
+        
+    }
+}
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,9 +82,9 @@
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="categories.html">Services</a></li>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="login.html">Login</a></li>
-						<li><a href="signup.html">Sign Up</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="login.php">Login</a></li>
+						<li><a href="signup.php">Sign Up</a></li>
 					</ul>
 
 				</div>
