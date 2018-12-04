@@ -41,11 +41,12 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
                             session_start();
+                            
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
                             // now this will redirect to the services page
-                            header("location: services.php");  
+                            header("location: categories.php");  
                         } else{
                             //error
                             $password_err = "Password Incorrect";
