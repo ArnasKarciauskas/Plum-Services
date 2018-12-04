@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 					<li><a href="categories.php">Services</a></li>
 					<li><a href="#info1">About</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="#showcase">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="login.php">Login</a></li>
 					<li><a href="signup.php">Sign-Up</a></li>
                     <li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>

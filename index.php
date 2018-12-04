@@ -37,7 +37,7 @@
 					<li><a href="categories.php">Services</a></li>
 					<li><a href="#info1">About</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="#showcase">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="login.php">Login</a></li>
 					<li><a href="signup.php">Sign-Up</a></li>
                     <li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
@@ -55,11 +55,11 @@
 				<div class="col-md-12 col-sm-12">
 					<div class="showcase-left">
 			<div class="jumbotron">
-				<h1 class="a">Hello there....</h1>
-				<h2 class="b">"WE PROVIDE WHAT YOU NEED"</h2>
+				<h1 class="a">Plum Services</h1>
+				<h2 class="b">There for you when you need it most</h2>
 				<hr class="my-4">
-				<p class="c">Search for all services, all in one place.We are here to sort it all.</p>
-				<a class="btn btn-primary btn-lg" href="categories.html" role="button">search for services</a>
+				<p class="c">Search through a wide variety of different categories for a service you want</p>
+				<a class="btn btn-primary btn-lg" href="categories.php" role="button">search for services</a>
 			</div>
 		</div>
 		</div>
@@ -69,13 +69,13 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
 					<div class="info-left">
-						<img src="img/why1.jpg">
+						<img src="https://en.agictech.com/media/1455/services4.png">
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6">
 					<div class="showcase-right">
 						<h1>Why Plumservice?</h1>
-						<p> You'll Get More Competitive Bids. 24/7 Support.Same day delivery. Helps to create a successfull business at affordable costs.</p>
+						<p> We have a wide variety of benefits ranging from a simple and easy to understand user interface, to 24/7 support.</p>
 					</div>
 					<br>
 				</div>
@@ -95,7 +95,7 @@
 				<div class="col-md-6 col-sm-6">
 					<div class="info-right">
 						<h2>Services we provide...</h2>
-						<p>Graphics & Design, Programming, Webdesigning, writing, Plumbers, Electricians, Mechanics, Cleaners...</p>
+						<p>Design, Programming, Webdesigning, writing, Plumbers, Electricians, Mechanics, Cleaners...</p>
 						<br>
 
 					</div>
