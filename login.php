@@ -146,13 +146,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="" method="post" class="login-form">
-			                    	<div class="form-group">
+			                    <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login-form">
+			                    	<div class="form-group<?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
 			                    		<label class="sr-only" for="form-username">Username</label>
 			                        	<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                                     <span class="help-block"><?php echo $username_err; ?></span>
 			                        </div>
-			                        <div class="form-group">
+			                        <div class="form-group<?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
 			                        	<label class="sr-only" for="form-password">Password</label>
 			                        	<input type="password" name="password" class="form-control">
                                         <span class="help-block"><?php echo $password_err; ?></span>
