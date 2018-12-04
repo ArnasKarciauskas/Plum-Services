@@ -25,7 +25,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
         
     }
     else {
-        $password = trim($_post["password"]);
+        $password = trim($_POST["password"]);
     }
     //validation of login stuff
     if(empty($username_err) && empty($password_err)){
@@ -34,6 +34,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             $param_username = $username;
             // next we'll attempt to execute the statement
+            
             if(mysqli_stmt_execute($stmt)){
                 mysqli_stmt_store_result($stmt);
                 if(mysqli_stmt_num_rows($stmt) == 1){
@@ -47,10 +48,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                             header("location: index.php");
                         
                     
-                }
+                } else {
+                            $password_err = "Incorrect";
+                        }
+                    }
                 
                 
-                 else{
+                }else{
                         $username_err = "Username Incorrect";
         
                     }
