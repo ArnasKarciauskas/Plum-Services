@@ -110,10 +110,14 @@ button:hover{
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="login.html">login</a></li>
-          <li><a href="signup.html">signup</a></li>
-        </ul>
+					<li><a href="categories.php">Services</a></li>
+					<li><a href="#info1">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#showcase">Home</a></li>
+					<li><a href="login.php">Login</a></li>
+					<li><a href="signup.php">Sign-Up</a></li>
+                    <li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
+          </ul>
 
       </div>
       <!--/.nav-collapse -->
