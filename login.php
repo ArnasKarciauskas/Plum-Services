@@ -36,26 +36,21 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
             // next we'll attempt to execute the statement
             if(mysqli_stmt_execute($stmt)){
                 mysqli_stmt_store_result($stmt);
-                
-                
                 if(mysqli_stmt_num_rows($stmt) == 1){
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
-                    
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
                             session_start();
-                            
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
-                            // now this will redirect to the services page
-                            header("location: categories.php");  
-                        } else{
-                            //error
-                            $password_err = "Password Incorrect";
-                        }
-                    }
-                    } else{
+                            header("location: index.php");
+                        
+                    
+                }
+                
+                
+                 else{
                         $username_err = "Username Incorrect";
         
                     }
