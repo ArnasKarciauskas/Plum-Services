@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     // this checks the code before inserting it into the database
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         //insert statement inserting the info into the database
-        $sql = "INSERT INTO users (username, password) VALUES (?,?)";
+        $sql = "INSERT INTO users (username, password, user_type) VALUES (?,?,$user_type)";
         if ($stmt = mysqli_prepare($link, $sql)){
             // bind variables are params
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
@@ -185,6 +185,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 <label>Confirm Password</label>
                 <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
+                <select name="User Type">
+                    <option value="<?php echo $provider; ?>">Provider</option>
+                    <option value="<?php echo $customer;?>">Customer</option>
+
+                </select>
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">

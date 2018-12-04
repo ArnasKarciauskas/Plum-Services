@@ -3,7 +3,7 @@
 //start the session
 session_start();
 // if the user is already logged in this will redirect them to the Services page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
+if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
     header("location: services.php");
     exit;
 }
@@ -45,14 +45,14 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                             session_start();
                             
                             
-                            $_SESSION["loggedin"] = true;
+                            $_SESSION["online"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
                             header("location: index.php");
                         
                     
                 } else {
-                            $password_error = "Incorrect";
+                            $password_error = "Password Incorrect";
                         }
                     }
                 
@@ -163,6 +163,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 			                        	<input type="password" name="password" class="form-control">
                                         <span class="help-block"><?php echo $password_error; ?></span>
 			                        </div>
+                                    
 			                        <button type="submit" class="btn">Sign in!</button>
 			                    </form>
 		                    </div>
