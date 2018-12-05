@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+
 	<script
 	  src="https://code.jquery.com/jquery-3.3.1.js"
 	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -19,7 +21,8 @@
 		});</script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <style>
-        .jumbotron { background-size: auto 100%; }
+
+
 
 
 
@@ -36,7 +39,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="img/p.jpg" width="30" height="30" alt=""> Plumservice</a>
+				<a class="navbar-brand" href="#"><img src="" width="30" height="30" alt=""> </a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -60,13 +63,17 @@
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
 					<div class="showcase-left">
-			<div class="jumbotron">
-				<h1 class="a">Plum Services</h1>
+            <div class = "container"> 
+                <div class="row">
+
+                <h1 class="a" style="font-size:120px; color:blueviolet; font: ">Plum Services</h1>
 				<h2 class="b">There for you when you need it most</h2>
 				<hr class="my-4">
 				<p class="c">Search through a wide variety of different categories for a service you want</p>
 				<a class="btn btn-primary btn-lg" href="categories.php" role="button">search for services</a>
-			</div>
+                </div>
+            </div>
+            
 		</div>
 		</div>
 		</div>
@@ -75,7 +82,7 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
 					<div class="info-left">
-						<img src="">
+						<img src="img/jumbotron.jpg">
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6">
@@ -95,38 +102,271 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
 					<div class="info-left">
-						<img src="img/support-vector.png">
+						<img src="">
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6">
-					<div class="info-right">
-						<h2>Services we provide...</h2>
-						<p>Design, Programming, Webdesigning, writing, Plumbers, Electricians, Mechanics, Cleaners...</p>
-						<br>
-
-					</div>
+					
 				</div>
 			</div>
 		</div>
 	</section>
 	<hr>
-	<section id="info2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="info-left">
-						<h2>should add more details here about our webite</h2>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="info-right">
-						<h2>any other details</h2>
-						<p>we will need to add some details here as well.we can discuss together.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <html>
+<head>
+ <title>Cards</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>$(document).ready(function () {
+    $('div.card').fadeIn(1000).removeClass('card');
+});</script>
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+
+}
+
+.card{
+     width: 65%;
+     display:inline-block;
+     display: none;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px;
+     margin: 2%;
+
+
+
+    }
+
+.image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 50%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+
+
+
+
+ }
+
+.title{
+
+  text-align: center;
+  padding: 10px;
+
+ }
+
+h1{
+  font-size: 15px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+</style>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="" width="30" height="30" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+					<li><a href="categories.php">Services</a></li>
+					<li><a href="#info1">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="login.php">Login</a></li>
+					<li><a href="signup.php">Sign-Up</a></li>
+                    <li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
+          </ul>
+
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+<div class="main">
+
+ <!--cards -->
+<div class="container-fluid">
+  <div class="row">
+    <!--<div class="col-md-4">-->
+    <div class="col-sm-4">
+<div class="card">
+
+<div class="image">
+   <img src="img/Webdev.png" alt="web services">
+</div>
+<div class="title">
+ <h1>
+Web services</h1>
+</div>
+<div class="des">
+ <p>
+Need a website? Look no further..</p>
+<button>See more</button>
+</div>
+</div>
+</div>
+
+
+<!--cards -->
+<!--<div class="col-md-4">-->
+<div class="col-sm-4">
+<div class="card">
+
+<div class="image">
+   <img src="img/SEO.png" alt="SEO">
+</div>
+<div class="title">
+ <h1>
+Internet Marketing</h1>
+</div>
+<div class="des">
+ <p>
+Social Media marketing, SEO, etc..</p>
+<button>See more</button>
+</div>
+</div>
+</div>
+<!--cards -->
+<!--<div class="col-md-4">-->
+<div class="col-sm-4">
+<div class="card">
+
+<div class="image">
+   <img src="img/language.png" alt="Translation">
+</div>
+<div class="title">
+ <h1>
+Data input & Translation</h1>
+</div>
+<div class="des">
+ <p>
+Need a document transcribed? Video translated?</p>
+<button>See more</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cards -->
+<div class="container-fluid">
+  <div class="row">
+    <!--<div class="col-md-4">-->
+    <div class="col-sm-4">
+      <div class="card">
+
+<div class="image">
+   <img src="img/vid.png" alt="VIDEO">
+</div>
+<div class="title">
+ <h1>
+Photo & Video</h1>
+</div>
+<div class="des">
+ <p>
+Request a video, take professional photos for your business..</p>
+<button>See more</button>
+</div>
+</div>
+</div>
+
+<!--cards -->
+<!--<div class="col-md-4">-->
+<div class="col-sm-4">
+<div class="card">
+
+<div class="image">
+   <img src="img/car.png" alt="Mechanic">
+</div>
+<div class="title">
+ <h1>
+Car Mechanic</h1>
+</div>
+<div class="des">
+ <p>
+Mechanic comes to you! Best local prices for quick fixes on your car.</p>
+<button>See more</button>
+</div>
+</div>
+</div>
+<!--cards -->
+<!--<div class="col-md-4">-->
+<div class="col-sm-4">
+<div class="card">
+
+<div class="image">
+   <img src="img/handyman.png" alt="Handy-man">
+</div>
+<div class="title">
+ <h1>
+Handy Man</h1>
+</div>
+<div class="des">
+ <p>
+Plumbing? Painting? Moving? Local handy man services...</p>
+<button>See more</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+	
 
 	<section id="contact">
 		<div class="container">
