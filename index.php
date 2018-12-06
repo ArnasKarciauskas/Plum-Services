@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head id="home">
 	<meta charset="utf-8">
 	<title>Plum Services</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
@@ -20,13 +20,6 @@
 		    $('div.navbar').fadeIn(3000).removeClass('navbar');
 		});</script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <style>
-
-
-
-
-
-    </style>
 </head>
 
 <body>
@@ -43,10 +36,10 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="categories.php">Services</a></li>
+					<li><a href="#serv">Services</a></li>
 					<li><a href="#info1">About</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="index.php">Home</a></li>
+					<li><a href="#home">Home</a></li>
 					<li><a href="login.php">Login</a></li>
 					<li><a href="signup.php">Sign-Up</a></li>
                     <li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
@@ -70,7 +63,7 @@
 				<h2 class="b">There for you when you need it most</h2>
 				<hr class="my-4">
 				<p class="c">Search through a wide variety of different categories for a service you want</p>
-				<a class="btn btn-primary btn-lg" href="categories.php" role="button">search for services</a>
+				<a class="btn btn-primary btn-lg" href="#serv" role="button">search for services</a>
                 </div>
             </div>
             
@@ -98,7 +91,7 @@
 	<br>
 
 	<section id="info1">
-		<div class="container">
+		<div class="container" id="serv">
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
 					<div class="info-left">
@@ -223,10 +216,10 @@ button:hover{
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-					<li><a href="categories.php">Services</a></li>
+					<li><a href="#serv">Services</a></li>
 					<li><a href="#info1">About</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="index.php">Home</a></li>
+					<li><a href="#home">Home</a></li>
 					<li><a href="login.php">Login</a></li>
 					<li><a href="signup.php">Sign-Up</a></li>
                     <li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
@@ -366,7 +359,17 @@ Plumbing? Painting? Moving? Local handy man services...</p>
 </div>
 </body>
 </html>
-	
+
+	<div class="outline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12" id="about">
+				<h3 class="text-center">About Us</h3>
+				<p class="text-center">The company was created in 2018 by a group of 4 students, it has since grown to be very popular service booking website in Ireland. We are a leading provider for online and physical services. Our goal as a company is to provide you with a 5 star customer service and the best overall experience possible, please do not hesitate to contact us with any questions or issues which may arise. Our helplines are open 24/7.</p>			
+			</div>			
+		</div>	
+	</div>
+	</div>
 
 	<section id="contact">
 		<div class="container">
