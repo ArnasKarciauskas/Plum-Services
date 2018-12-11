@@ -46,7 +46,7 @@ session_start();
 		  </div>
 		  <div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-                        <li><a href = "AccountInfo.php"><?php
+                        <li><a href = "AccountInformation.php"><?php
                             echo $_SESSION['username']; ?></a> </li>
 						<li><a href="#serv">Services</a></li>
 						<li><a href="#about">About</a></li>
