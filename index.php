@@ -1,3 +1,13 @@
+<?php
+session_start()
+    $_SESSION['username'] = $username
+    
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -46,7 +56,9 @@
 						<li><a href="#home">Home</a></li>
 						<li><a href="login.php">Login</a></li>
 						<li><a href="signup.php">Sign-Up</a></li>
+                        <li><a href="#contact"></a> Welcome <?php echo $_SESSION['username']   ?>  </li>
 						<li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
+                
 			  </ul>
 		  </div>
 		  <!--/.nav-collapse -->
