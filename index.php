@@ -1,9 +1,5 @@
 <?php
-session_start()
-    $_SESSION['username'] = $username
-    
-
-
+session_start();
 
 
 ?>
@@ -50,14 +46,15 @@ session_start()
 		  </div>
 		  <div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
+                        <li><a href = "AccountInfo.php"><?php
+                            echo $_SESSION['username']; ?></a> </li>
 						<li><a href="#serv">Services</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
 						<li><a href="#home">Home</a></li>
 						<li><a href="login.php">Login</a></li>
 						<li><a href="signup.php">Sign-Up</a></li>
-                        <li><a href="#contact"></a> Welcome <?php echo $_SESSION['username']   ?>  </li>
-						<li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
+						<li> <a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account </a></li>
                 
 			  </ul>
 		  </div>
