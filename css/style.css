@@ -101,16 +101,11 @@ p
   border-bottom:#333 7px solid;
 }
 
-footer
-{
-  padding:30px;
-}
-
 .outline
 {
 	background:black;
 	min-height:200px;
-	color:grey;
+	color:white;
 	text-align:center;
 	padding-top:10px;
 }

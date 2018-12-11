@@ -77,21 +77,14 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
     
 ?>
 
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Login Form </title>
-
+		
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -105,7 +98,6 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-
     </head>
 
     <body>
@@ -125,18 +117,17 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 						<li><a href="index.php">Home</a></li>
 						<li><a href="signup.php">Sign-Up</a></li>
 						<li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
-			  </ul>
+			</ul>
 		  </div>
 		  <!--/.nav-collapse -->
 		</div>
 	  </nav>
 
         <!-- Top content -->
-        <div class="top-content">
-        	
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
+    <div class="top-content">        	
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
                        
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
@@ -152,11 +143,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                             <div class="form-bottom">
 			                    <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login-form">
 			                    	<div class="form-group<?php echo (!empty($username_error)) ? 'has-error' : ''; ?>">
+										<label>Username</label>
 			                    		<label class="sr-only" for="form-username">Username</label>
 			                        	<input type="text" name="username" class="form-control" placeholder="Your username" value="<?php echo $username; ?>">
                                     <span class="help-block"><?php echo $username_error; ?></span>
 			                        </div>
 			                        <div class="form-group<?php echo (!empty($password_error)) ? 'has-error' : ''; ?>">
+										<label>Password</label>
 			                        	<label class="sr-only" for="form-password">Password</label>
 			                        	<input type="password" name="password" class="form-control" placeholder="Your password">
                                         <span class="help-block"><?php echo $password_error; ?></span>
@@ -167,17 +160,15 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </div>            
         </div>
-		</div>
+	</div>
 
 
         <!-- Javascript -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
        
     </body>
-
 </html>

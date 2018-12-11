@@ -159,7 +159,7 @@
 		</div>
 		<div class="des">
 		 <p>Need a document transcribed? Video translated?</p>
-		<button>See more</button>
+		<button><a href="datainput.php">See more</a></button>
 		</div>
 	</div>
 </div>
@@ -241,15 +241,15 @@
 					<form role="form" method="post" action="php/contact.php">
 						<div class="form-group">
 							<label>Name: </label>
-							<input class="form-control" type="text" name="name" id="name" placeholder="Enter Name">
+							<input class="form-control" type="text" name="name" id="name" placeholder="Enter your name">
 						</div>
 						<div class="form-group">
 							<label>Email: </label>
-							<input class="form-control" type="text" name="email" id="email" placeholder="Enter Email">
+							<input class="form-control" type="text" name="email" id="email" placeholder="Enter your e-mail">
 						</div>
 						<div class="form-group">
 							<label>Message: </label>
-							<textarea class="form-control" type="text" name="message" id="message" placeholder="Enter Message"></textarea>
+							<textarea class="form-control" type="text" name="message" id="message" placeholder="Enter your message"></textarea>
 						</div>
 						<input id="submit" name="submit" type="submit" value="Submit" class="btn btn-primary">
 					</form>
