@@ -109,32 +109,27 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
     </head>
 
     <body>
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html"><img src="img/p.jpg" width="30" height="30" alt=""> Plumservice</a>
-				</div>
-				<div id="navbar" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-					<li><a href="categories.php">Services</a></li>
-					<li><a href="#info1">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="login.php">Login</a></li>
-					<li><a href="signup.php">Sign-Up</a></li>
-                    <li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
-				</ul>
-
-				</div>
-				<!--/.nav-collapse -->
-			</div>
-		</nav>
+	  <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="" width="30" height="30" alt=""> </a>
+		  </div>
+		  <div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.php">Home</a></li>
+						<li><a href="signup.php">Sign-Up</a></li>
+						<li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
+			  </ul>
+		  </div>
+		  <!--/.nav-collapse -->
+		</div>
+	  </nav>
 
         <!-- Top content -->
         <div class="top-content">
@@ -148,7 +143,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                         	<div class="form-top">
                         		<div class="form-top-left">
                         			<h3>Login to our site</h3>
-                            		<p>Enter your username and password to log on:</p>
+                            		<p>Enter your username and password to log in:</p>
                         		</div>
                         		<div class="form-top-right">
                         			<i class="fa fa-lock"></i>
@@ -158,34 +153,17 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 			                    <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login-form">
 			                    	<div class="form-group<?php echo (!empty($username_error)) ? 'has-error' : ''; ?>">
 			                    		<label class="sr-only" for="form-username">Username</label>
-			                        	<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+			                        	<input type="text" name="username" class="form-control" placeholder="Your username" value="<?php echo $username; ?>">
                                     <span class="help-block"><?php echo $username_error; ?></span>
 			                        </div>
 			                        <div class="form-group<?php echo (!empty($password_error)) ? 'has-error' : ''; ?>">
 			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="password" class="form-control">
+			                        	<input type="password" name="password" class="form-control" placeholder="Your password">
                                         <span class="help-block"><?php echo $password_error; ?></span>
-			                        </div>
-                                    
-			                        <button type="submit" class="btn">Sign in!</button>
+			                        </div>                                 
+									<input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign in!">
 			                    </form>
 		                    </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 social-login">
-                        	
-                        	<div class="social-login-buttons">
-	                        	<a class="btn btn-link-1 btn-link-1-facebook" href="#">
-	                        		<i class="fa fa-facebook"></i> Facebook
-	                        	</a>
-	                        	<a class="btn btn-link-1 btn-link-1-twitter" href="#">
-	                        		<i class="fa fa-twitter"></i> Twitter
-	                        	</a>
-	                        	<a class="btn btn-link-1 btn-link-1-google-plus" href="#">
-	                        		<i class="fa fa-google-plus"></i> Google Plus
-	                        	</a>
-                        	</div>
                         </div>
                     </div>
                 </div>
