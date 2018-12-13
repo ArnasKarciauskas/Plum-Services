@@ -24,11 +24,11 @@ session_start();
 		});</script>
 		<script>$(document).ready(function () {
 		    $('div.navbar').fadeIn(3000).removeClass('navbar');
-		});</script>		
+		});</script>
 		<script>$(document).ready(function () {
 		$('div.card').fadeIn(1000).removeClass('card');
-		});</script>		
-		
+		});</script>
+
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
@@ -55,7 +55,7 @@ session_start();
 						<li><a href="login.php">Login</a></li>
 						<li><a href="signup.php">Sign-Up</a></li>
 						<li> <a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account </a></li>
-                
+
 			  </ul>
 		  </div>
 		  <!--/.nav-collapse -->
@@ -67,7 +67,7 @@ session_start();
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
 					<div class="showcase-left">
-						<div class = "container"> 
+						<div class = "container">
 							<div class="row">
 
 							<h1 class="a" style="font-size:120px; color:blueviolet; font: ">Plum Services</h1>
@@ -81,7 +81,7 @@ session_start();
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
@@ -110,7 +110,7 @@ session_start();
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6">
-					
+
 				</div>
 			</div>
 		</div>
@@ -133,7 +133,7 @@ session_start();
 			</div>
 			<div class="des">
 			 <p>Need a website? Look no further..</p>
-			<button>See more</button>
+			<button><a href="WebServices.php">See more</a></button>
 			</div>
 		</div>
 	</div>
@@ -237,9 +237,9 @@ session_start();
 			<div class="row">
 				<div class="col-lg-12" id="about">
 					<h3 class="text-center">About Us</h3>
-					<p class="text-center">The company was created in 2018 by a group of 4 students, it has since grown to be very popular service booking website in Ireland. We are a leading provider for online and physical services. Our goal as a company is to provide you with a 5 star customer service and the best overall experience possible, please do not hesitate to contact us with any questions or issues which may arise. Our helplines are open 24/7.</p>			
-				</div>			
-			</div>	
+					<p class="text-center">The company was created in 2018 by a group of 4 students, it has since grown to be very popular service booking website in Ireland. We are a leading provider for online and physical services. Our goal as a company is to provide you with a 5 star customer service and the best overall experience possible, please do not hesitate to contact us with any questions or issues which may arise. Our helplines are open 24/7.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -278,8 +278,8 @@ session_start();
 
 	<div class="outline3">
 		<div class="container">
-			<footer>Plumservice Copyright &copy; 2018<br/></footer>		
-		</div>	
+			<footer>Plumservice Copyright &copy; 2018<br/></footer>
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
