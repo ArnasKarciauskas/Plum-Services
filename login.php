@@ -4,7 +4,7 @@
 session_start();
 // if the user is already logged in this will redirect them to the Services page
 if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
-    header("location: services.php");
+    header("location: index.php");
     exit;
 }
 require_once "configuration.php";
