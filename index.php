@@ -152,7 +152,7 @@ session_start();
 		</div>
 		<div class="des">
 		 <p>Social Media marketing, SEO, etc..</p>
-		<button>See more</button>
+		<button><a href="internetMarket.php">See more</a></button>
 		</div>
 	</div>
 </div>
@@ -191,7 +191,7 @@ session_start();
 		</div>
 		<div class="des">
 		 <p>Request a video, take professional photos for your business..</p>
-		<button>See more</button>
+		<button><a href="videography.php">See more</a></button>
 		</div>
 	</div>
 </div>
@@ -201,14 +201,14 @@ session_start();
 <div class="col-sm-4">
 	<div class="card">
 		<div class="image">
-		   <img src="img/car.png" alt="Mechanic">
+		   <img src="img/car.png" alt="Car Services">
 		</div>
 		<div class="title">
-		 <h1>Car Mechanic</h1>
+		 <h1>Car Services</h1>
 		</div>
 		<div class="des">
 		 <p>Mechanic comes to you! Best local prices for quick fixes on your car.</p>
-		<button>See more</button>
+		<button><a href="cars.php">See more</a></button>
 		</div>
 	</div>
 </div>
@@ -225,7 +225,7 @@ session_start();
 		</div>
 		<div class="des">
 		 <p>Plumbing? Painting? Moving? Local handy man services...</p>
-		<button>See more</button>
+		<button><a href="handyman.php">See more</a></button>
 		</div>
 	</div>
 </div>

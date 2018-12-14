@@ -30,6 +30,8 @@ session_start();
 		});</script>
 
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -131,4 +133,5 @@ session_start();
         </div>
       </div>
   </body>
+	
   </html>

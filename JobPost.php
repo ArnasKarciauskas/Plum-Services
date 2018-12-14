@@ -21,7 +21,7 @@
 		<script>$(document).ready(function () {
 		$('div.card').fadeIn(1000).removeClass('card');
 		});</script>
-		
+
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
@@ -49,7 +49,7 @@
 	   </nav>
         <div class="container container-table">
 			<div class ="row vertical-centre-row">
-                <div class="col-md-3">
+                <div class="col-md-4 col-md-offset-4">
 					<form action="DatabaseInput.php" method="post">
 						Job Name:<input type="text" class="form-control" name ="JobName"/>
 						<br/>
@@ -61,7 +61,7 @@
 						<br/>
 						Email Address: <input type="text" class="form-control" name ="Email"/>
 						<br/>
-						Category:   
+						Category:
 								<select class="custom-select" name="Category">
 									<option value="Web Sevices">Web Services</option>
 									<option value="Internet Marketing">Internet Marketing</option>
@@ -69,13 +69,13 @@
 									<option value="Photo">Photo/Video</option>
 									<option value="Mechanic">Mechanic</option>
 									<option value ="Handy man"> Handy Man</option>
-								</select>						
+								</select>
 								<br/>
 							    <br/>
 								<input type="Submit" class="btn btn-primary"/>
 					</form>
 				</div>
 			</div>
-		</div>     
+		</div>
     </body>
 </html>

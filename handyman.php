@@ -62,7 +62,7 @@ session_start();
   </div>
   </nav>
   <div class="container">
-    <img alt="background" title="background" src="img\data.jpg" />
+    <img alt="background" title="background" src="img\jat.jpg" />
  </div>
  <div class="container">
  	<div class="row">
