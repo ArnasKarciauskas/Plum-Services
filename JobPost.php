@@ -43,7 +43,13 @@
 		  <!--/.nav-collapse -->
 		</div>
 	   </nav>
+    <div>
         <div>
+            <p> This
+            is some sample
+            text try push down the form 
+            </p>
+        </div>
 
         <form action="DatabaseInput.php" method="post">
             Job Name: <input type="text" name ="JobName"/>
