@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Login Form </title>
-		
+
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -47,16 +47,19 @@
         <div class ="row vertical-centre-row">
             <p> This
             is some sample
-            text try push down the form 
+            text try push down the form
             </p>
+            <div class="container">
+            </br>
 
+                  <div class="col-md-3 col-md-offset-3">
         <form action="DatabaseInput.php" method="post">
             Job Name: <input type="text" name ="JobName"/>
             Short Description: <input type="text" name ="ShortDesc"/>
             Long Description: <input type="text" name ="LongDesc"/>
             Phone Number: <input type="text" name ="Phone"/>
             Email Address: <input type="text" name ="Email"/>
-            Job Category:   <select name="Category">
+            Category:   <select name="Category">
                                 <option value="Web Sevices">Web Services</option>
                                 <option value="Internet Marketing">Internet Marketing</option>
                                 <option value="Translation">Mercedes</option>
@@ -64,12 +67,14 @@
                                 <option value="Mechanic">Mechanic</option>
                                 <option value ="Handy man"> Handy Man</option>
                             </select>
+                          </br>
+                          </br>
             <input type="Submit"/>
-        
-
         </form>
+</div>
         </div>
-
+</div>
         </div>
+        
     </body>
 </html>
