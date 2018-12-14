@@ -46,9 +46,9 @@ session_start();
     <div id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav navbar-right">
 
-          <li><a href="index.php #serv">Services</a></li>
-          <li><a href="index.php #about">About</a></li>
-          <li><a href="index.php #contact">Contact</a></li>
+          <li><a href="index.php#serv">Services</a></li>
+          <li><a href="index.php#about">About</a></li>
+          <li><a href="index.php#contact">Contact</a></li>
           <li><a href="index.php">Home</a></li>
           <li><a href="login.php">Login</a></li>
           <li><a href="signup.php">Sign-Up</a></li>
