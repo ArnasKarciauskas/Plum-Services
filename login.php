@@ -136,9 +136,6 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                         			<h3>Login to our site</h3>
                             		<p>Enter your username and password to log in:</p>
                         		</div>
-                        		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
-                        		</div>
                             </div>
                             <div class="form-bottom">
 			                    <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login-form">
