@@ -42,7 +42,8 @@
 		  </div>
 		  <!--/.nav-collapse -->
 		</div>
-	  </nav>
+	   </nav>
+        <div>
 
         <form action="DatabaseInput.php" method="post">
             Job Name: <input type="text" name ="JobName"/>
@@ -59,7 +60,9 @@
                                 <option value ="Handy man"> Handy Man</option>
                             </select>
             <input type="Submit"/>
+        
             
         </form>
+        </div>
     </body>
 </html>
