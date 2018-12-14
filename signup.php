@@ -157,9 +157,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                         			<h3>Sign Up</h3>
                             		<p>Enter your desired username and password to register an account:</p>
                         		</div>
-                        		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
-                        		</div>
                             </div>
                             <div class="form-bottom">
 								<form action="<?php echo   htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -170,12 +167,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 									</div>    
 									<div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
 										<label>Password</label>
-										<input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+										<input type="password" name="password" class="form-control" placeholder="Enter your desired password" value="<?php echo $password; ?>">
 										<span class="help-block"><?php echo $password_err; ?></span>
 									</div>
 									<div class="form-group <?php echo (!empty($confirm_password_err)) ?         'has-error' : ''; ?>">
 										<label>Confirm Password</label>
-										<input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+										<input type="password" name="confirm_password" class="form-control" placeholder="Confirm your entered password" value="<?php echo $confirm_password; ?>">
 										<span class="help-block"><?php echo $confirm_password_err; ?></span>
 									</div>
 									<div class="form-group">
