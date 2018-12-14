@@ -4,7 +4,7 @@
 session_start();
 // if the user is already logged in this will redirect them to the Services page
 if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
-    header("location: services.php");
+    header("location: index.php");
     exit;
 }
 require_once "configuration.php";
@@ -135,9 +135,6 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                         		<div class="form-top-left">
                         			<h3>Login to our site</h3>
                             		<p>Enter your username and password to log in:</p>
-                        		</div>
-                        		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
                         		</div>
                             </div>
                             <div class="form-bottom">
