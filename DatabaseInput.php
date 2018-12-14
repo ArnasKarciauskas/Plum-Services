@@ -1,16 +1,17 @@
 <?php
 $user = "plumservices";
-$pass = "P@ssword123";
+$pass = "P@ssword";
 $database = "plumservices";
-$JobName = $_POST['JobName'];
-$ShortDesc = $_POST['ShortDesc'];
-$LongDesc = $_POST['LongDesc'];
-$phone = $_POST['Phone'];
-$email = $_POST['Email'];
+$JobName = $_POST['Value1'];
+$ShortDesc = $_POST['Value2'];
+$LongDesc = $_POST['Value3'];
+$Phone = $_POST['Value4'];
+$Email = $_POST['Value5'];
+$Category = $_POST[ ]
 $mysqli = new mysqli("den1.mysql2.gear.host", $user, $pass, $database);
-mysqli_select_db($mysqli, $database) or die( "Unable to select database");
-$sql = "INSERT INTO Jobs VALUES( '','','$JobName','$ShortDesc','$LongDesc','$phone','$email','')";
-$mysqli->query($sql);
+@mysql_select_db($database) or die("not working");
+$query = "INSERT INTO Jobs VALUES( '','','$JobName','$ShortDesc','$LongDesc','$phone','$email','$category'  ")
+$mysqli_>query($query);
 $mysqli->close();
 
 
