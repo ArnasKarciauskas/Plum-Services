@@ -22,7 +22,7 @@
             Long Description: <input type="text" name ="LongDesc"/>
             Phone Number: <input type="text" name ="Phone"/>
             Email Address: <input type="text" name ="Email"/>
-            Job Category:   <select name="Cateogry">
+            Job Category:   <select name="Category">
                                 <option value="Web Sevices">Web Services</option>
                                 <option value="Internet Marketing">Internet Marketing</option>
                                 <option value="Translation">Mercedes</option>
