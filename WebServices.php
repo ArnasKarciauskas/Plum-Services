@@ -1,255 +1,134 @@
+<?php
+session_start();
+
+
+?>
+
 <!DOCTYPE html>
 <html>
-<head>
- <title>Cards</title>
+
+<head id="home">
+	<meta charset="utf-8">
+	<title>Plum Services</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/liststyle.css">
+    <link rel="icon" href="img/favicon.png">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous"></script>
+		<script>$(document).ready(function () {
+		    $('div.navbar-header').fadeIn(3000).removeClass('navbar-header');
+		});</script>
+		<script>$(document).ready(function () {
+		    $('div.navbar').fadeIn(3000).removeClass('navbar');
+		});</script>
+		<script>$(document).ready(function () {
+		$('div.card').fadeIn(1000).removeClass('card');
+		});</script>
+
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script>$(document).ready(function () {
-    $('div.card').fadeIn(1000).removeClass('card');
-});</script>
-<style type="text/css">
-
-
-*{
- margin: 0px;
- padding: 0px;
-}
-body{
- font-family: arial;
-}
-.main{
-
- margin: 2%;
- display: block;
- margin-left: auto;
- margin-right: auto;
- width: 50%;
-
-}
-
-.card{
-     width: 65%;
-     display:inline-block;
-     display: none;
-     box-shadow: 2px 2px 20px black;
-     border-radius: 5px;
-     margin: 2%;
-
-
-
-    }
-
-.image img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  width: 50%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-
-
-
-
-
- }
-
-.title{
-
-  text-align: center;
-  padding: 10px;
-
- }
-
-h1{
-  font-size: 15px;
- }
-
-.des{
-  padding: 3px;
-  text-align: center;
-  font-size: 10px;
-  padding-top: 10px;
-        border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-button{
-  margin-top: 40px;
-  margin-bottom: 10px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding:10px;
-}
-button:hover{
-  background-color: black;
-  color: white;
-  transition: .5s;
-  cursor: pointer;
-}
-
-</style>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="img/p.jpg" width="30" height="30" alt=""> Plumservice</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-					<li><a href="categories.php">Services</a></li>
-					<li><a href="#info1">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="login.php">Login</a></li>
-					<li><a href="signup.php">Sign-Up</a></li>
-                    <li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
-          </ul>
-
-      </div>
-      <!--/.nav-collapse -->
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="" width="30" height="30" alt=""> </a>
     </div>
+    <div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="index.php #serv">Services</a></li>
+          <li><a href="index.php #about">About</a></li>
+          <li><a href="index.php #contact">Contact</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="signup.php">Sign-Up</a></li>
+          <li> <a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account </a></li>
+
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
   </nav>
-<div class="main">
-
- <!--cards -->
-<div class="container-fluid">
-  <div class="row">
-    <!--<div class="col-md-4">-->
-    <div class="col-sm-4">
-<div class="card">
-
-<div class="image">
-   <img src="img/Webdev.png" alt="web services">
-</div>
-<div class="title">
- <h1>
-Web services</h1>
-</div>
-<div class="des">
- <p>
-Need a website? Look no further..</p>
-<button>See more</button>
-</div>
-</div>
-</div>
-
-
-<!--cards -->
-<!--<div class="col-md-4">-->
-<div class="col-sm-4">
-<div class="card">
-
-<div class="image">
-   <img src="img/SEO.png" alt="SEO">
-</div>
-<div class="title">
- <h1>
-Internet Marketing</h1>
-</div>
-<div class="des">
- <p>
-Social Media marketing, SEO, etc..</p>
-<button>See more</button>
-</div>
-</div>
-</div>
-<!--cards -->
-<!--<div class="col-md-4">-->
-<div class="col-sm-4">
-<div class="card">
-
-<div class="image">
-   <img src="img/language.png" alt="Translation">
-</div>
-<div class="title">
- <h1>
-Data input & Translation</h1>
-</div>
-<div class="des">
- <p>
-Need a document transcribed? Video translated?</p>
-<button>See more</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!--cards -->
-<div class="container-fluid">
-  <div class="row">
-    <!--<div class="col-md-4">-->
-    <div class="col-sm-4">
-      <div class="card">
-
-<div class="image">
-   <img src="img/vid.png" alt="VIDEO">
-</div>
-<div class="title">
- <h1>
-Photo & Video</h1>
-</div>
-<div class="des">
- <p>
-Request a video, take professional photos for your business..</p>
-<button>See more</button>
-</div>
-</div>
-</div>
-
-<!--cards -->
-<!--<div class="col-md-4">-->
-<div class="col-sm-4">
-<div class="card">
-
-<div class="image">
-   <img src="img/car.png" alt="Mechanic">
-</div>
-<div class="title">
- <h1>
-Car Mechanic</h1>
-</div>
-<div class="des">
- <p>
-Mechanic comes to you! Best local prices for quick fixes on your car.</p>
-<button>See more</button>
-</div>
-</div>
-</div>
-<!--cards -->
-<!--<div class="col-md-4">-->
-<div class="col-sm-4">
-<div class="card">
-
-<div class="image">
-   <img src="img/handyman.png" alt="Handy-man">
-</div>
-<div class="title">
- <h1>
-Handy Man</h1>
-</div>
-<div class="des">
- <p>
-Plumbing? Painting? Moving? Local handy man services...</p>
-<button>See more</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+  <div class="container">
+    <img alt="background" title="background" src="img\web1.jpg" />
+ </div>
+ <div class="container">
+ 	<div class="row">
+        <div id="custom-search-input">
+        <div class="input-group col-md-12">
+         <input type="text" class="  search-query form-control" placeholder="What are you looking for?" />
+        <span class="input-group-btn">
+         <button class="btn btn-danger" type="button">
+        <span class=" glyphicon glyphicon-search"></span>
+       </button>
+     </span>
+    </div>
+   </div>
+ 	</div>
+ </div>
+</br>
+  <div class="container marketing">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+  </body>
+  </html>

@@ -110,6 +110,15 @@ p
 	padding-top:10px;
 }
 
+.outline2
+{
+	background:white;
+	min-height:200px;
+	color:white;
+	text-align:center;
+	padding-top:10px;
+}
+
 .outline3
 {
 	background:black;
