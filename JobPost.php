@@ -43,7 +43,7 @@
 		  <!--/.nav-collapse -->
 		</div>
 	   </nav>
-    <div>
+    <div class="h-100 row align-items-center">
         <div>
             <p> This
             is some sample
