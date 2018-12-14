@@ -43,13 +43,12 @@
 		  <!--/.nav-collapse -->
 		</div>
 	   </nav>
-    <div class="h-100 row align-items-center">
-        <div>
+        <div class="container container-table">
+        <div class ="row vertical-centre-row">
             <p> This
             is some sample
             text try push down the form 
             </p>
-        </div>
 
         <form action="DatabaseInput.php" method="post">
             Job Name: <input type="text" name ="JobName"/>
@@ -67,8 +66,10 @@
                             </select>
             <input type="Submit"/>
         
-            
+
         </form>
+        </div>
+
         </div>
     </body>
 </html>
