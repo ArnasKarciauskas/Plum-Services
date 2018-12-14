@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Login Form </title>
+		
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/loginstyle.css">
 
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     </head>
+
     <body>
-        <div id="navbar" class="collapse navbar-collapse">
+	  <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="" width="30" height="30" alt=""> </a>
+		  </div>
+		  <div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php">Home</a></li>
-				<li><a href="signup.php">Sign-Up</a></li>
-				<li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="signup.php">Sign-Up</a></li>
+						<li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
 			</ul>
 		  </div>
-      
+		  <!--/.nav-collapse -->
+		</div>
+	  </nav>
+
         <form action="DatabaseInput.php" method="post">
             Job Name: <input type="text" name ="JobName"/>
             Short Description: <input type="text" name ="ShortDesc"/>

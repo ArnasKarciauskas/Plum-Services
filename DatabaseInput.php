@@ -17,6 +17,8 @@ mysqli_select_db($mysqli, $database) or die( "Unable to select database");
 $sql = "INSERT INTO Jobs VALUES( '','','$JobName','$ShortDesc','$LongDesc','$phone','$email','$category')";
 $mysqli->query($sql);
 $mysqli->close();
+header("Location: index.php");
+exit();
 
 
 
