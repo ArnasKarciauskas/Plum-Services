@@ -40,8 +40,10 @@
 		  <div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.php">Home</a></li>
+						<li><a href="index.php #serv">Back to jobs</a></li>
+						<li><a href ="JobPost.php">Post a Job</a></li>
+						<li><a href="login.php">Login</a></li>
 						<li><a href="signup.php">Sign-Up</a></li>
-						<li><a href="DatabaseInput.php">Back to jobs</a></li>
 						<li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
 			</ul>
 		  </div>
@@ -52,12 +54,12 @@
         <!-- Top content -->
 	<div class="container">		
 			<div class="col-md-6">
-				<img src="img/handyman.png" alt="p"/>
+				<img  class="img-fluid" src="img/profile-default.png" alt="p" />
 				<hr/>
 				<h3 class="text-center">Name:</h3>
 				<hr/>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6" id="descmargin">
 				<h2>Job Description:</h2>
 				<h4>Description:</h4>
 				<h4>Phone Number:</h4>
@@ -65,6 +67,12 @@
 				<h4>Category:</h4>				
 			</div>
 	</div>	
+
+	<div class="outline4">
+		<div class="container">
+			<footer>Plumservice Copyright &copy; 2018<br/></footer>
+		</div>
+	</div>
 	
         <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -40,6 +40,7 @@
 		  <div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.php">Home</a></li>
+						<li><a href="login.php">Login</a></li>
 						<li><a href="signup.php">Sign-Up</a></li>
 						<li><a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account</a></li>
 			</ul>
