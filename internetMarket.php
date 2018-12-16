@@ -18,8 +18,20 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "Name: " .$JobName = $row["job_Name"].
-        " Description: " . $row["Long_Desc"]. "Phone Number " . $row["phone_Number"]. "<br>";
+		
+			echo '<table cellspacing=3 cellpadding=4 border=1 bgcolor="#dddddd">
+			<tr>
+			<td style="border:1px solid black">Name</td>
+			<td style="border:1px solid black">Description</td>
+			<td style="border:1px solid black">Phone number</td>
+			</tr>
+			<tr>
+			</br>
+			<td>'.$JobName = $row["job_Name"].'</td>
+			<td>'.$row["Long_Desc"].'</td>
+			<td>'.$row["phone_Number"]. '</td>
+			</tr>
+			</table>';			
     }
 } else {
     echo "0 results";
@@ -38,7 +50,7 @@ $conn->close();
 	<title>Plum Services</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/liststyle.css">
+	<link rel="stylesheet" href="css/style.php">
     <link rel="icon" href="img/favicon.png">
 
 	<script
@@ -69,14 +81,12 @@ $conn->close();
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#"><img src="" width="30" height="30" alt=""> </a>
+    <a class="navbar-brand" href="#"></a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav navbar-right">
 
           <li><a href="index.php#serv">Services</a></li>
-          <li><a href="index.php#about">About</a></li>
-          <li><a href="index.php#contact">Contact</a></li>
           <li><a href="index.php">Home</a></li>
           <li><a href="login.php">Login</a></li>
           <li><a href="signup.php">Sign-Up</a></li>
@@ -87,6 +97,7 @@ $conn->close();
     <!--/.nav-collapse -->
   </div>
   </nav>
+  
   <div class="container">
     <img alt="background" title="background" src="img\internetMarketing.jpg" />
  </div>
@@ -104,36 +115,37 @@ $conn->close();
    </div>
  	</div>
  </div>
+ </br>
   <div class="container marketing">
       <div class="row">
         <div class="col-md-3">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          
-              
-              
-              
+          <h2><?php echo $JobName ?></h2>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
+		
+        <div class="col-md-3">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>
+		  	  
+		  <?php echo $JobName?>		  
+		  </h2>		  
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+		
         <div class="col-md-3">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2><?php echo $JobName ?></h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
+		
         <div class="col-md-3">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2><?php echo $JobName ?></h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+        </div>	
       </div>
+	  
       <div class="row">
         <div class="col-md-3">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
