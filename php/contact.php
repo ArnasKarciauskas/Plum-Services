@@ -1,5 +1,5 @@
 <?php
-$from = "arnaskarciauskas@gmail.com";
+$from = "info@ps.ie";
 $to = "arnaskarciauskas@gmail.com";
 $name = Trim(stripslashes($_POST['name']));
 $email = Trim(stripslashes($_POST['email']));
@@ -20,7 +20,7 @@ $body .="\n";
 $go = mail($to, $subject, $body, "From:<$from>");
 
 if($go){
-	header("Location: ../thankyou.html");
+	header("Location: ../thankyou.php");
 }
 else{
 	echo("Message could not be sent, please try again.");
@@ -28,3 +28,4 @@ else{
 
 
 ?>
+

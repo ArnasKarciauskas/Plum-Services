@@ -43,6 +43,10 @@ p
   color:#000 !important;
   font-weight:bold;
 }
+.text-center
+{
+	margin-top:20%;
+}
 
 #showcase h1
 {
