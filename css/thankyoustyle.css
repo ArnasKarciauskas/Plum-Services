@@ -209,6 +209,11 @@ button:hover
   transition: .5s;
   cursor: pointer;
 }
+
+.text-center
+{
+	margin-top:20%;
+}
 <<<<<<< HEAD
 =======
 textarea{
