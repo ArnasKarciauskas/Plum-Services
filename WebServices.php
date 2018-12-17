@@ -1,5 +1,45 @@
 <?php
 session_start();
+$servername = "den1.mysql2.gear.host";
+$username = "plumservices";
+$password = "P@ssword123";
+$dbname = "plumservices";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT * FROM Jobs WHERE category = 'Web Sevices'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+		
+			echo '<table cellspacing=3 cellpadding=4 border=1 bgcolor="#dddddd">
+			<tr>
+			<td style="border:1px solid black">Name</td>
+			<td style="border:1px solid black">Description</td>
+			<td style="border:1px solid black">Phone number</td>
+			</tr>
+			<tr>
+			</br>
+			<td>'.$JobName = $row["job_Name"].'</td>
+			<td>'.$row["Long_Desc"].'</td>
+			<td>'.$row["phone_Number"]. '</td>
+			</tr>
+			</table>';			
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+
+
+
 
 
 ?>

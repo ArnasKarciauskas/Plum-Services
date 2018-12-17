@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM Jobs WHERE category = 'Web Sevices'";
+$sql = "SELECT * FROM Jobs WHERE category = 'Internet Marketing'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

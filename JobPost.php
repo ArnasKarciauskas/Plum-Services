@@ -66,7 +66,7 @@
 								<select class="custom-select" name="Category">
 									<option value="Web Sevices">Web Services</option>
 									<option value="Internet Marketing">Internet Marketing</option>
-									<option value="Translation">Mercedes</option>
+									<option value="Translation">Translation</option>
 									<option value="Photo">Photo/Video</option>
 									<option value="Mechanic">Mechanic</option>
 									<option value ="Handy man"> Handy Man</option>
