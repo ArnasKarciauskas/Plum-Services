@@ -52,7 +52,7 @@ session_start();
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
 						<li><a href="#home">Home</a></li>
-                        <li><a href ="JobPost.php"><?php if(isset($_SESSION['online']) && $_SESSION['online'] == true){echo Post a Job} ?></a></li>
+                        <li><a href ="JobPost.php"> Post a Job</a></li>
 						<li><a href="login.php">Login</a></li>
 						<li><a href="signup.php">Sign-Up</a></li>
 						<li> <a href="SignOut.php" class="btn btn-danger">Sign Out of Your Account </a></li>
