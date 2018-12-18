@@ -169,7 +169,7 @@ session_start();
 		</div>
 		<div class="des">
 		 <p>Need a document transcribed? Video translated?</p>
-		<button><a href="datainput.php">See more</a></button>
+		<button><a href="Translation.php">See more</a></button>
 		</div>
 	</div>
 </div>

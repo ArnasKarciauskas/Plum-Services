@@ -15,7 +15,7 @@ $link = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_NAME);
 
 
 
-// check if the database has connecting correctly
+// This will check if the database has been connected
 if($link === false){
     die("ERROR: Connection not established.".mysqli_connect_error());
 }

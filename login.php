@@ -37,7 +37,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
             
             if(mysqli_stmt_execute($stmt)){
                 mysqli_stmt_store_result($stmt);
-                
+                // checks if theres records in the database 
                 if(mysqli_stmt_num_rows($stmt) == 1){
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
@@ -123,12 +123,11 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 		</div>
 	  </nav>
 
-        <!-- Top content -->
     <div class="top-content">        	
         <div class="inner-bg">
             <div class="container">
                 <div class="row">
-                       
+                       <-- --> This is the form for the login - Mark</-->
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
@@ -137,6 +136,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                             		<p>Enter your username and password to log in:</p>
                         		</div>
                             </div>
+                        
                             <div class="form-bottom">
 			                    <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="login-form">
 			                    	<div class="form-group<?php echo (!empty($username_error)) ? 'has-error' : ''; ?>">
