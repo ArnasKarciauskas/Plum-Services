@@ -116,6 +116,8 @@ $result = $conn->query($sql);
     $conn->close();
 
  ?>
+         <a href="Delete/WebDelete.php" class="btn btn-danger">Delete All Records </a>
+
   </body>
 	
   </html>

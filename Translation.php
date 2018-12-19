@@ -113,6 +113,8 @@ $result = $conn->query($sql);
     $conn->close();
 
  ?>
+         <a href="Delete/TranslationDelete.php" class="btn btn-danger">Delete All Records </a>
+
   </body>
 
   </html>
