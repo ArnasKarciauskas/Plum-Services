@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 
 $sql = "SELECT * FROM Jobs WHERE category = 'Translation'";
 $result = $conn->query($sql);
@@ -94,27 +94,36 @@ $result = $conn->query($sql);
    </div>
  	</div>
  </div>
-<?php if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-		
-			echo '<div class="row">
-        <div class="col-md-3">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h3>'.$row["job_Name"].' </h3>
-          <p>'.$row["Long_Desc"].'</p>
-          <p>'.$row["phone_Number"].' </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>';			
-    }
-    } else {
-    echo "0 results";
-    }
-    $conn->close();
+ <br />
+ <div class="container">
+ <?php if ($result->num_rows > 0) {
+     // output data of each row
+     while($row = $result->fetch_assoc()) {
 
- ?>
-         <a href="Delete/TranslationDelete.php" class="btn btn-danger">Delete All Records </a>
+ 			echo '
+       <div class="row">
+         <div class="col-md-3">
+           <img class="img-responsive" src="img\language.png" alt="Generic placeholder image" width="140" height="140">
+           <h1>'.$row["job_Name"].' </h1>
+           <p>'.$row["Long_Desc"].'</p>
+           <p>0'.$row["phone_Number"].' </p>
+         </div>
+         ';
+     }
+     } else {
+     echo "No results Found";
+     }
+     $conn->close();
 
+  ?>
+ </div>
+ <div class="container">
+
+   <div class="col-md-2 col-md-offset-10">
+      <a href="Delete/TranslationDelete.php" class="btn btn-danger">Delete All Records </a>
+
+ </div>
+ </div>
   </body>
 
   </html>

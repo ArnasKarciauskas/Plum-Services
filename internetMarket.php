@@ -11,7 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 
 $sql = "SELECT * FROM Jobs WHERE category = 'Internet Marketing'";
 $result = $conn->query($sql);
@@ -77,7 +77,7 @@ $result = $conn->query($sql);
     <!--/.nav-collapse -->
   </div>
   </nav>
-  
+  <div>
   <div class="container">
     <img alt="background" title="background" src="img\internetMarketing.jpg" />
  </div>
@@ -95,33 +95,43 @@ $result = $conn->query($sql);
    </div>
  	</div>
  </div>
+</div>
+<br />
+<div class="container">
 <?php if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-		
-			echo '<div class="row">
+
+			echo '
+      <div class="row">
         <div class="col-md-3">
-          <img class="img-circle" src="img\SEO.png" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-responsive" src="img\SEO.png" alt="Generic placeholder image" width="140" height="140">
           <h1>'.$row["job_Name"].' </h1>
           <p>'.$row["Long_Desc"].'</p>
-          <p>'.$row["phone_Number"].' </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>';			
+          <p>0'.$row["phone_Number"].' </p>
+        </div>
+        ';
     }
     } else {
-    echo "0 results";
+    echo "No results Found";
     }
     $conn->close();
 
  ?>
+</div>
+<div class="container">
+
+  <div class="col-md-2 col-md-offset-10">
      <a href="Delete/MarketDelete.php" class="btn btn-danger">Delete All Records </a>
-        
-		
-        
-	  
-      
-    
-    
+
+</div>
+</div>
+
+
+
+
+
+
+
     </body>
 </html>
-  
