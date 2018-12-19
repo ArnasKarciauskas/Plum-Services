@@ -101,7 +101,7 @@ $result = $conn->query($sql);
 		
 			echo '<div class="row">
         <div class="col-md-3">
-          <img class="img-circle" src="img/language.png" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="img\internetMarketing.jpg" alt="Generic placeholder image" width="140" height="140">
           <h1>'.$row["job_Name"].' </h1>
           <p>'.$row["Long_Desc"].'</p>
           <p>'.$row["phone_Number"].' </p>
